@@ -3,26 +3,42 @@ layout: default
 title: TAMU BYX Island Party 2014
 ---
 
-<script src="/js/jquery.bgswitcher.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 <script>
 $(function() {
-$(".header-full-bleed").bgswitcher({
-  images: ["/img/splash_page4.jpg", "/img/splash_page3.jpg", "/img/splash_page2.jpg"],
-  effect: 'drop'
-});
+
+$(".header-full-bleed").backstretch(
+  ["/img/islandparty-4570.jpg"
+  ,"/img/islandparty-4123.jpg"
+  ,"/img/islandparty-4581.jpg"
+  ,"/img/islandparty-4232.jpg"
+  ,"/img/islandparty-4589.jpg"
+  ,"/img/islandparty-4549.jpg"
+  ,"/img/islandparty-4172.jpg"
+  ,"/img/islandparty-4621.jpg"
+  ], {duration: 5000, fade: 1500});
 
 });
 </script>
 
-<header class="header-full-bleed" style="background: #fff url('/img/splash_page4.jpg') no-repeat center center; background-size: cover;">
+<header class="header-full-bleed">
    <div class="header-content">
       <h1>Island Party 2014</h1>
       <h3>Presented by Texas A&amp;M BYX</h3>
       <h3>March 28, 2014 - Wolf Pen Amphitheatre</h3>
    </div>
 </header>
-<div class="single-column" style="text-align: center;">
-   <p>
+<div class="single-column">
+  <section id="about">
+    <h2>What is Island Party?</h2>
+  </section>
+  <section id="lineup">
+    <h2>The Line-up</h2>
+  </section>
+  <section id="sponsors">
+    <h2>Our Sponsors</h2>
+  </section>
+   <p style="text-align: center;">
       Please direct all inquiries to 
       <a class="highlight" href="mailto:islandparty@tamubyx.org">islandparty@tamubyx.org</a>!
    </p>
