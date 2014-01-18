@@ -18,6 +18,20 @@ $(".header-full-bleed").backstretch(
   ,"/img/islandparty-4621.jpg"
   ], {duration: 5000, fade: 1500});
 
+$('.site-nav--link').click(function(){
+    if ( $(this).attr('href') === "#" ) {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 500);
+    }
+    else {
+      $('html, body').animate({
+          scrollTop: $( $(this).attr('href') ).offset().top
+      }, 500);
+    }
+    return false;
+});
+
 });
 </script>
 

@@ -1,6 +1,11 @@
 .site-nav {
-  padding: 0;
-  text-align:center;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 999;
 
   @include breakpoint(one-hand) {
     text-align: center;
@@ -21,6 +26,9 @@
         padding-right: 0;
       }
     }
+  }
+  @include breakpoint(one-hand) {
+    font-size:$type-6;
   }
 }
 
