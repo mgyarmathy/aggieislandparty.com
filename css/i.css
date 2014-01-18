@@ -417,13 +417,13 @@ h6, .h6 {
     h6, .h6 {
       font-size: 16px; } }
 
-p {
+p, li {
   font-size: 24px;
   line-height: 1.5; }
-  p + p {
+  p + p, li + p {
     margin-top: 1em; }
   @media screen and (min-width: 100px) and (max-width: 479px) {
-    p {
+    p, li {
       font-size: 18px; } }
 
 .intro {

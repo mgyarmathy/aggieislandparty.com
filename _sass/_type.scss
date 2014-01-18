@@ -63,7 +63,7 @@ h6,.h6 {
   }
 }
 
-p {
+p,li {
   // Because 20px body copy is the new Black
   font-size:$type-4;
   line-height:$copy-line-height;
