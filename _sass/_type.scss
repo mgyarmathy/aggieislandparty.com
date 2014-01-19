@@ -99,9 +99,9 @@ p,li {
 
 // Uh you don't need to read this stuff. Let's make it small.
 .meta {
-  font-size:$type-5;
+  font-size:$type-6;
   @include breakpoint(one-hand) {
-    font-size:$type-6;
+    font-size:$type-6 - 2px;
   }
 }
 

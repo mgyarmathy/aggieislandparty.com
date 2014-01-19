@@ -442,10 +442,10 @@ p, li {
     font-size: 48px; } }
 
 .meta {
-  font-size: 18px; }
+  font-size: 16px; }
   @media screen and (min-width: 100px) and (max-width: 479px) {
     .meta {
-      font-size: 16px; } }
+      font-size: 14px; } }
 
 .ct {
   text-align: center; }
