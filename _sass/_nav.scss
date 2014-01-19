@@ -18,7 +18,7 @@
 
 .site-nav--item {
   display:inline-block;
-  font-size:$type-5;
+  font-size:$type-6;
   &:last-child {
     border-right: none;
     @include breakpoint(one-hand) {
