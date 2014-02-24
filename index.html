@@ -3,11 +3,25 @@ layout: default
 title: TAMU BYX Island Party 2014
 ---
 
+<!-- nprogress for hero unit -->
+<script src="/js/progress.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 <script>
 $(function() {
-
-$(".header-full-bleed").backstretch(
+/*
+progressJs('.header-full-bleed')
+  .autoIncrease(20,100)
+  .onprogress(function(targetElm, percent) {
+    if(percent > 99) {
+      //progressJs(targetElm).end();
+      progressJs('.header-full-bleed')
+        .autoIncrease(0, 5000)
+        .set(1);
+    }
+  })
+  .start();
+*/
+$('.header-full-bleed').backstretch(
   ["/img/islandparty-4570.jpg"
   ,"/img/islandparty-4123.jpg"
   ,"/img/islandparty-4581.jpg"
@@ -16,7 +30,23 @@ $(".header-full-bleed").backstretch(
   ,"/img/islandparty-4549.jpg"
   ,"/img/islandparty-4172.jpg"
   ,"/img/islandparty-4621.jpg"
-  ], {duration: 5000, fade: 1500});
+  ], {duration: 100, fade: 1500}
+);
+
+$('.header-full-bleed').backstretch("pause");
+
+$(window).on("backstretch.after", function (e, instance, index) {
+  // If we wanted to stop the slideshow after it reached the end
+  progressJs('.header-full-bleed')
+    .autoIncrease(5,800)
+    .onprogress(function(targetElm, percent) {
+      if(percent > 99) {
+        progressJs(targetElm).set(1);
+        $('.header-full-bleed').backstretch("next");
+      }
+    })
+    .start();
+});
 
 $('.site-nav--link').click(function(){
     if ( $(this).attr('href') === "#" ) {
