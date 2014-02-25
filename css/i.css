@@ -1,6 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,300);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,700);
-@import url(http://fonts.googleapis.com/css?family=Crimson+Text);
 @import url(http://fonts.googleapis.com/css?family=Oswald);
 /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -360,6 +358,8 @@ $margin:;
 /* ==========================================================================
    GRID
    ========================================================================== */
+/* Media Query mixin
+   ========================================================================== */
 /* Single and responsive column
    ========================================================================== */
 .single-column {
@@ -368,8 +368,17 @@ $margin:;
   width: 100%;
   max-width: 768px !important; }
 
-/* Media Query mixin
-   ========================================================================== */
+.double-column .column {
+  vertical-align: top;
+  margin: 0 auto;
+  padding: 0;
+  width: 49%;
+  display: inline-block;
+  max-width: 384px !important; }
+  @media screen and (min-width: 100px) and (max-width: 479px) {
+    .double-column .column {
+      width: 100%; } }
+
 * {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
@@ -382,36 +391,60 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .25em; }
 
 h1, .h1 {
-  font-size: 108px; }
+  font-size: 96px; }
+  @media screen and (min-width: 100px) and (max-width: 479px) {
+    h1, .h1 {
+      font-size: 48px; } }
 
 h2, .h2 {
-  font-size: 64px; }
+  font-size: 48px;
+  color: #15616d; }
+  @media screen and (min-width: 100px) and (max-width: 479px) {
+    h2, .h2 {
+      font-size: 32px; } }
 
 h3, .h3 {
-  font-size: 32px; }
+  font-size: 32px;
+  text-transform: uppercase;
+  margin: 0; }
+  @media screen and (min-width: 100px) and (max-width: 479px) {
+    h3, .h3 {
+      font-size: 24px; } }
 
 h4, .h4 {
   font-size: 24px;
   font-weight: 900; }
+  @media screen and (min-width: 100px) and (max-width: 479px) {
+    h4, .h4 {
+      font-size: 18px; } }
 
 h5, .h5 {
   font-size: 24px;
   font-style: italic; }
+  @media screen and (min-width: 100px) and (max-width: 479px) {
+    h5, .h5 {
+      font-size: 18px; } }
 
 h6, .h6 {
-  font-size: 16px; }
+  font-size: 18px; }
+  @media screen and (min-width: 100px) and (max-width: 479px) {
+    h6, .h6 {
+      font-size: 16px; } }
 
-p {
+p, li {
   font-size: 24px;
   line-height: 1.5; }
-  p + p {
+  p + p, li + p {
     margin-top: 1em; }
+  @media screen and (min-width: 100px) and (max-width: 479px) {
+    p, li {
+      font-size: 18px; } }
 
 .intro {
   font-size: 32px; }
 
 .post h1 {
-  font-size: 64px; }
+  font-size: 48px; }
   @media screen and (min-width: 100px) and (max-width: 479px) {
     .post h1 {
       font-size: 32px; } }
@@ -420,10 +453,13 @@ p {
 
 @media screen and (min-width: 100px) and (max-width: 479px) {
   .h1-r {
-    font-size: 64px; } }
+    font-size: 48px; } }
 
 .meta {
   font-size: 16px; }
+  @media screen and (min-width: 100px) and (max-width: 479px) {
+    .meta {
+      font-size: 14px; } }
 
 .ct {
   text-align: center; }
@@ -489,18 +525,23 @@ a {
   text-decoration: none; }
 
 .link-hover-blue:hover, .large-list .large-list--link:hover, .site-nav--link:hover, .link-hover-blue:focus, .large-list .large-list--link:focus, .site-nav--link:focus {
-  color: #003399; }
+  color: #0c383f; }
   .link-hover-blue:hover .meta, .large-list .large-list--link:hover .meta, .site-nav--link:hover .meta, .link-hover-blue:focus .meta, .large-list .large-list--link:focus .meta, .site-nav--link:focus .meta {
-    color: #003399; }
+    color: #0c383f; }
 .link-hover-blue:active, .large-list .large-list--link:active, .site-nav--link:active {
-  color: #3366cc; }
+  color: #15616d; }
 
 .highlight {
-  color: #003399; }
+  color: #0c383f; }
 
 .site-nav {
-  padding: 0;
-  text-align: right; }
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 9999999; }
   @media screen and (min-width: 100px) and (max-width: 479px) {
     .site-nav {
       text-align: center; } }
@@ -516,6 +557,9 @@ a {
     @media screen and (min-width: 100px) and (max-width: 479px) {
       .site-nav--item:last-child .site-nav--link {
         padding-right: 0; } }
+  @media screen and (min-width: 100px) and (max-width: 479px) {
+    .site-nav--item {
+      font-size: 16px; } }
 
 .site-nav--link {
   font-weight: 400;
@@ -867,35 +911,252 @@ code {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 .header-full-bleed {
-  margin: 0;
-  background-size: cover; }
-  .header-full-bleed .full-bleed-title {
-    display: inline-block;
-    background: #fff;
-    padding: 1.5% 2%;
-    margin: 0 2% 5% 5%;
-    max-width: 65%;
-    line-height: 95%;
-    text-transform: uppercase;
-    letter-spacing: 7px; }
-  .header-full-bleed .full-bleed-subtitle {
-    display: inline-block;
-    padding: 0 2% 0;
-    margin: 0 5% 5% 5%;
-    max-width: 80%;
-    background: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 24px;
-    letter-spacing: 3px; }
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  padding: 5% 0;
+  margin-top: 50px;
+  text-align: center; }
+  .header-full-bleed .header-logo {
+    margin: 0;
+    height: 515px;
+    width: 386px;
+    display: inline; }
+    @media screen and (min-width: 100px) and (max-width: 479px) {
+      .header-full-bleed .header-logo {
+        height: 309px;
+        width: 232px;
+        display: inline-block; } }
+  .header-full-bleed .header-content {
+    width: 100%;
+    max-height: 300px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    text-align: center; }
+    .header-full-bleed .header-content h1, .header-full-bleed .header-content h2, .header-full-bleed .header-content h3 {
+      color: white;
+      text-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
+      text-transform: none;
+      word-wrap: break-word;
+      margin: 0; }
   @media screen and (min-width: 100px) and (max-width: 479px) {
-    .header-full-bleed .full-bleed-title {
-      font-size: 32px;
-      min-width: 90%;
-      padding: 1.5% 3.5%; }
-    .header-full-bleed .full-bleed-subtitle {
-      padding: 0 3.5%; } }
+    .header-full-bleed {
+      padding: 20% 0;
+      min-height: 400px; } }
 
 .post hr {
   width: 30%;
   margin: 3em auto; }
+
+.artist-img {
+  width: 90%;
+  height: 200px;
+  background-size: 100% 100%; }
+
+#lineup ul li:first-child {
+  font-weight: 800; }
+
+.sponsor-img {
+  display: inline-block;
+  width: 30%;
+  margin: 2% 5%; }
+
+.mobile-only {
+  display: none; }
+  @media screen and (min-width: 100px) and (max-width: 479px) {
+    .mobile-only {
+      display: block; } }
+
+/* Youtube Embed */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.progressjs-inner {
+  width: 0; }
+  @media screen and (min-width: 100px) and (max-width: 479px) {
+    .progressjs-inner {
+      display: none; } }
+
+.progressjs-progress {
+  z-index: 9999998; }
+
+/* blue theme, like iOS 7 progress bar */
+.progressjs-theme-blue .progressjs-inner {
+  height: 7px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: #15616d; }
+
+.progressjs-theme-blue.progressjs-end {
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+  opacity: 0; }
+
+.progressjs-theme-blue .progressjs-percent {
+  display: none; }
+
+/* blue theme with overlay layer, no percent bar */
+.progressjs-theme-blueOverlay {
+  background-color: white;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+
+.progressjs-theme-blueOverlay .progressjs-inner {
+  height: 100%;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: #3498db; }
+
+.progressjs-theme-blueOverlay.progressjs-end {
+  opacity: 0 !important; }
+
+.progressjs-theme-blueOverlay .progressjs-percent {
+  display: none; }
+
+/* blue theme with overlay layer, no percent bar */
+.progressjs-theme-blueOverlay {
+  background-color: white;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+
+.progressjs-theme-blueOverlay .progressjs-inner {
+  height: 100%;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: #3498db; }
+
+.progressjs-theme-blueOverlay.progressjs-end {
+  opacity: 0 !important; }
+
+.progressjs-theme-blueOverlay .progressjs-percent {
+  display: none; }
+
+/* Blue theme with border radius and overlay layer */
+.progressjs-theme-blueOverlayRadius {
+  background-color: white;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  border-radius: 5px; }
+
+.progressjs-theme-blueOverlayRadius .progressjs-inner {
+  height: 100%;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: #3498db;
+  border-radius: 5px; }
+
+.progressjs-theme-blueOverlayRadius.progressjs-end {
+  opacity: 0 !important; }
+
+.progressjs-theme-blueOverlayRadius .progressjs-percent {
+  display: none; }
+
+/* Blue theme with border radius and overlay layer */
+.progressjs-theme-blueOverlayRadiusHalfOpacity {
+  background-color: white;
+  opacity: 0.5;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  border-radius: 5px; }
+
+.progressjs-theme-blueOverlayRadiusHalfOpacity .progressjs-inner {
+  height: 100%;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: #3498db;
+  border-radius: 5px; }
+
+.progressjs-theme-blueOverlayRadiusHalfOpacity.progressjs-end {
+  opacity: 0 !important; }
+
+.progressjs-theme-blueOverlayRadiusHalfOpacity .progressjs-percent {
+  display: none; }
+
+/* Blue theme with border radius, overlay layer and percent bar */
+.progressjs-theme-blueOverlayRadiusWithPercentBar {
+  background-color: white;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  border-radius: 5px; }
+
+.progressjs-theme-blueOverlayRadiusWithPercentBar .progressjs-inner {
+  height: 100%;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: #3498db;
+  border-radius: 5px; }
+
+.progressjs-theme-blueOverlayRadiusWithPercentBar.progressjs-end {
+  opacity: 0 !important; }
+
+.progressjs-theme-blueOverlayRadiusWithPercentBar .progressjs-percent {
+  width: 70px;
+  text-align: center;
+  height: 40px;
+  position: absolute;
+  right: 50%;
+  margin-right: -35px;
+  top: 50%;
+  margin-top: -20px;
+  font-size: 30px;
+  opacity: .5; }
+
+.progressjs-theme-blackRadiusInputs {
+  height: 10px;
+  border-radius: 10px;
+  overflow: hidden; }
+
+.progressjs-theme-blackRadiusInputs .progressjs-inner {
+  height: 2px;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  background-color: #34495e; }
+
+.progressjs-theme-blackRadiusInputs.progressjs-end {
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+  opacity: 0; }
+
+.progressjs-theme-blackRadiusInputs .progressjs-percent {
+  display: none; }

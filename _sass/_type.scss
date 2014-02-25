@@ -21,36 +21,60 @@ h1,h2,h3,h4,h5,h6 {
 
 h1,.h1 {
   font-size:$type-1;
+  @include breakpoint(one-hand) {
+    font-size:$type-2;
+  }
 }
 
 h2,.h2 {
   font-size:$type-2;
+  @include breakpoint(one-hand) {
+    font-size:$type-3;
+  }
+  color: $blue-medium;
 }
 
 h3,.h3 {
   font-size:$type-3;
+  @include breakpoint(one-hand) {
+    font-size:$type-4;
+  }
+  text-transform: uppercase;
+  margin: 0;
 }
 
 h4,.h4 {
   font-size:$type-4;
   font-weight:900;
+  @include breakpoint(one-hand) {
+    font-size:$type-5;
+  }
 }
 
 h5,.h5 {
   font-size:$type-4;
   font-style:italic;
+  @include breakpoint(one-hand) {
+    font-size:$type-5;
+  }
 }
 
 h6,.h6 {
   font-size:$type-5;
+  @include breakpoint(one-hand) {
+    font-size:$type-6;
+  }
 }
 
-p {
+p,li {
   // Because 20px body copy is the new Black
   font-size:$type-4;
   line-height:$copy-line-height;
   + p {
     margin-top:1em;
+  }
+  @include breakpoint(one-hand) {
+    font-size:$type-5;
   }
 }
 
@@ -78,7 +102,10 @@ p {
 
 // Uh you don't need to read this stuff. Let's make it small.
 .meta {
-  font-size:$type-5;
+  font-size:$type-6;
+  @include breakpoint(one-hand) {
+    font-size:$type-6 - 2px;
+  }
 }
 
 .ct {
