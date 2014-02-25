@@ -28,7 +28,7 @@
     }
   }
   @include breakpoint(one-hand) {
-    font-size:$type-6;
+    font-size:$type-6 - 2px;
   }
 }
 

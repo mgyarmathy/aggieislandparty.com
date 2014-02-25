@@ -559,7 +559,7 @@ a {
         padding-right: 0; } }
   @media screen and (min-width: 100px) and (max-width: 479px) {
     .site-nav--item {
-      font-size: 16px; } }
+      font-size: 14px; } }
 
 .site-nav--link {
   font-weight: 400;
