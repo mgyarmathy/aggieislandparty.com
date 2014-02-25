@@ -53,6 +53,9 @@
   width: 90%;
   height: 200px;
   background-size:100% 100%;
+  @include breakpoint(one-hand){
+    width: 100%;
+  }
 }
 
 #lineup ul li {
@@ -65,6 +68,9 @@
   display: inline-block;
   width: 30%;
   margin: 2% 5%;
+  @include breakpoint(one-hand){
+    width: 100%;
+  }
 }
 
 .mobile-only {
