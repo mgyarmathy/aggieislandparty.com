@@ -3,50 +3,21 @@ layout: default
 title: TAMU BYX Island Party 2014
 ---
 
-<!-- nprogress for hero unit -->
-<script src="/js/progress.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 <script>
 $(function() {
-/*
-progressJs('.header-full-bleed')
-  .autoIncrease(20,100)
-  .onprogress(function(targetElm, percent) {
-    if(percent > 99) {
-      //progressJs(targetElm).end();
-      progressJs('.header-full-bleed')
-        .autoIncrease(0, 5000)
-        .set(1);
-    }
-  })
-  .start();
-*/
+
 $('.header-full-bleed').backstretch(
-  ["/img/islandparty-4570.jpg"
+  ["/img/islandparty-4581.jpg"
   ,"/img/islandparty-4123.jpg"
-  ,"/img/islandparty-4581.jpg"
-  ,"/img/islandparty-4232.jpg"
-  ,"/img/islandparty-4589.jpg"
   ,"/img/islandparty-4549.jpg"
+  ,"/img/islandparty-4232.jpg"
+  ,"/img/islandparty-4584.jpg"
+  ,"/img/islandparty-4589.jpg"
   ,"/img/islandparty-4172.jpg"
-  ,"/img/islandparty-4621.jpg"
-  ], {duration: 100, fade: 1500}
+  ,"/img/islandparty-4513.jpg"
+  ], {duration: 4000, fade: 1500}
 );
-
-$('.header-full-bleed').backstretch("pause");
-
-$(window).on("backstretch.after", function (e, instance, index) {
-  // If we wanted to stop the slideshow after it reached the end
-  progressJs('.header-full-bleed')
-    .autoIncrease(5,800)
-    .onprogress(function(targetElm, percent) {
-      if(percent > 99) {
-        progressJs(targetElm).set(1);
-        $('.header-full-bleed').backstretch("next");
-      }
-    })
-    .start();
-});
 
 $('.site-nav--link').click(function(){
     if ( $(this).attr('href') === "#" ) {
@@ -65,49 +36,94 @@ $('.site-nav--link').click(function(){
 });
 </script>
 
+<!-- progress bar for hero unit slideshow
+<script src="/js/progress.js"></script>
+<script>
+$(function() {
+$('.header-full-bleed').backstretch("pause");
+
+$(window).on("backstretch.after", function (e, instance, index) {
+  // If we wanted to stop the slideshow after it reached the end
+  progressJs('.header-full-bleed')
+    .autoIncrease(5,800)
+    .onprogress(function(targetElm, percent) {
+      if(percent > 99) {
+        progressJs(targetElm).set(1);
+        $('.header-full-bleed').backstretch("next");
+      }
+    })
+    .start();
+});
+
+});
+</script>
+-->
+
 <header class="header-full-bleed">
-   <div class="header-content">
-      <h1>Island Party 2014</h1>
-      <h3>Presented by Texas A&amp;M BYX</h3>
-      <h3>March 28-29 - Wolf Pen Amphitheatre</h3>
-   </div>
+  <img class="header-logo" src="/img/ip2014-logo.png"/>
+   <!--<div class="header-content mobile-only">
+      <h3>Hosted by Beta Upsilon Chi</h3>
+      <h3>March 28-29</h3>
+      <h3>Wolf Pen Amphitheater</h3>
+      <h3>Free Admission</h3>
+   </div>-->
 </header>
 <div class="single-column">
+  <div style="text-align: center; margin-top: 1em;">
+    <h3>Island Party Music Festival '14</h3>
+    <h3>Hosted By Beta Upsilon Chi</h3>
+    <h3>March 28-29</h3>
+    <h3>Wolf Pen Amphitheater</h3>
+    <h3>Free Admission</h3>
+  </div>
   <section id="about">
     <h2>What is Island Party?</h2>
+    <div class="video-container">
+      <iframe width="560" height="315" src="//www.youtube.com/embed/tmP4fGvxJYI" frameborder="0" allowfullscreen></iframe>
+    </div>
     <p>
       Since the foundation of BYX at Texas A&amp;M in 1994, Beta Upsilon Chi Fraternity has hosted Island Party as our own way of giving back to the community. Although Island Party has grown and adapted over the years, its purpose remains the same: evangelism, philanthropy, fun, life-giving, and the bolstering of our own brotherhood and unity. Recently, Island Party has taken on the form of a music festival—an all-day, totally free concert with performances by talented musicians, a comfortable environment, games, food, opportunities for connections to be made, and great friends to share all of it with.
     </p>
     <p>
-      This year we would like to invite you to Island Party 2014: a true musical festival, lasting two days. Join us Friday, March 28th for a ramped-up, high-energy night of hip-hop and rap. Then, come back on Saturday, March 29th, for a laid-back, family-friendly atmosphere to boot.
+      This year we would like to invite you to Island Party 2014: a true musical festival spanning over two days. Join us Friday, March 28th for a ramped-up, high-energy night of hip-hop and rap. Come back on Saturday, March 29th, for a laid-back, family-friendly atmosphere to boot.
+    </p>
   </section>
   <section id="lineup">
-    <h2>The Line-up</h2>
-    <ul>
-      <li>Purple Strep Throat</li>
-      <li>Mannequin Cloud</li>
-      <li>The Giraffe Hears Timmy</li>
-      <li>Become the Ragamuffin</li>
-      <li>Luigi's Nipple</li>
-      <li>Mammal Doctor</li>
-    </ul>
-    <p>
-      <a class="highlight" href="http://www.newbandname.com/show.php?Genres=indie&string=">
-      http://www.newbandname.com/show.php?Genres=indie&amp;string=
-      </a>
-    </p>
-    <p>
-      It's not enough, but it's helping. And then another one. Why else would he define middle-class as someone making under five million dollars a year? How else could he propose hundreds of billions in tax breaks for big corporations and oil companies but not one penny of tax relief to more than one hundred million Americans? Make no mistake: we do not want to keep our troops in Afghanistan.
+    <h2>The Two-Day Lineup</h2>
+    <div class="double-column">
+      <div class="column">
+      <h3>Friday - March 28th</h3>
+      <div class="artist-img" style="background-image: url('/img/Trip_Lee.jpg');"></div>
+      <ul>
+        <li>Trip Lee</li>
+        <li>This'l</li>
+        <li>Canon</li>
+        <li>Reconcile</li>
+      </ul>
+      </div>
+      <div class="column">
+        <h3>Saturday - March 29th</h3>
+        <div class="artist-img" style="background-image: url('/img/PennySparrow.png');"></div>
+        <ul>
+          <!--<li>Seryn</li>-->
+          <li>Penny &amp; Sparrow</li>
+          <li>Colony House</li>
+          <li>Jillian Edwards</li>
+          <li>Least of These</li>
+        </ul>
+      </div>
+    </div>
+    <p class="meta">
+      (the official schedule of performances will be released closer to the date of the event)
     </p>
   </section>
   <section id="sponsors">
-    <h2>Our Sponsors</h2>
-    <p>
-      Pour-over letterpress selfies Shoreditch Godard. Master cleanse mumblecore fingerstache Banksy synth. You probably haven't heard of them letterpress roof party paleo kale chips tofu Godard banh mi, Brooklyn iPhone shabby chic. Flannel fixie McSweeney's mumblecore seitan brunch. Chillwave pug Terry Richardson beard. Disrupt squid flexitarian iPhone Shoreditch tousled. Lo-fi you probably haven't heard of them single-origin coffee cornhole.
-    </p>
+    <h2>Thanks To Our Sponsors</h2>
+    <img class="sponsor-img" src="/img/blue-bell-logo.jpg" />
+    <img class="sponsor-img" src="/img/Northwestern-Mutual-logo-original.png" />
   </section>
    <p>
-      Please direct all inquiries to 
+      Interested in supporting us? <br/>Please direct all inquiries to 
       <a class="highlight" href="mailto:islandparty@tamubyx.org">islandparty@tamubyx.org</a>!
    </p>
 </div>

@@ -1,10 +1,13 @@
-$progress-color: #469fad;
+$progress-color: $blue-medium;
 
 .progressjs-inner {
     width: 0;
+    @include breakpoint(one-hand){
+      display: none;
+    }
 }
 .progressjs-progress {
-    z-index: 9999999;
+    z-index: 9999998;
 }
 
 /* blue theme, like iOS 7 progress bar */

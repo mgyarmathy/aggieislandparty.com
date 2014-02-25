@@ -6,69 +6,87 @@
   width: 100%;
   height: 100%;
   min-height: 600px;
-  padding: 10% 0;
+  padding: 5% 0;
   margin-top: 50px;
+  text-align: center;
+
+  .header-logo {
+    margin: 0;
+    height: 515px;
+    width: 386px;
+    @include breakpoint(one-hand){
+      height: 309px;
+      width: 232px;
+      display: inline-block;
+    }
+    display: inline;
+  }
 
   .header-content {
-    width: 70%;
+    width: 100%;
+    max-height: 300px;
     background-color: rgba(0,0,0,0.4);
     padding: 25px;
-    margin-left: 5%;
+    text-align: center;
 
     h1,h2,h3 {
       color: white;
       text-shadow: 0 2px 2px rgba(0,0,0,0.8);
+      text-transform: none;
       word-wrap: break-word;
       margin: 0;
     }
+  }
 
-    @include breakpoint(one-hand){
-      width: 90%;
-    }
+  @include breakpoint(one-hand){
+      padding: 20% 0;
+      min-height: 400px;
   }
 }
-/*
-.header-full-bleed {
-  margin:0;
-  background-size:cover;
 
-  .full-bleed-title {
-    display: inline-block;
-    background: #fff;
-    padding: 1.5% 2%;
-    margin: 0 2% 5% 5%;
-    max-width: 65%;
-    line-height: 95%;
-    text-transform: uppercase;
-    letter-spacing: 7px;
-  }
-
-  .full-bleed-subtitle {
-    display: inline-block;
-    padding: 0 2% 0;
-    margin: 0 5% 5% 5%;
-    max-width: 80%;
-    background: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size:$type-4;
-    letter-spacing: 3px;
-  }
-
-  @include breakpoint(one-hand) {
-    .full-bleed-title {
-      font-size:$type-3;
-      min-width: 90%;
-      padding: 1.5% 3.5%;
-    }
-
-    .full-bleed-subtitle {
-      padding: 0 3.5%;
-    }
-  }
-}
-*/
 .post hr {
   width: 30%;
   margin: 3em auto;
+}
+
+.artist-img {
+  width: 90%;
+  height: 200px;
+  background-size:100% 100%;
+}
+
+#lineup ul li {
+  &:first-child {
+    font-weight: 800;
+  }
+}
+
+.sponsor-img {
+  display: inline-block;
+  width: 30%;
+  margin: 2% 5%;
+}
+
+.mobile-only {
+  display: none;
+  @include breakpoint(one-hand){
+      display: block;
+  }
+}
+
+/* Youtube Embed */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
