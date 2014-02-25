@@ -68,9 +68,6 @@
   display: inline-block;
   width: 30%;
   margin: 2% 5%;
-  @include breakpoint(one-hand){
-    width: 100%;
-  }
 }
 
 .mobile-only {

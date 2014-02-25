@@ -963,9 +963,6 @@ code {
   display: inline-block;
   width: 30%;
   margin: 2% 5%; }
-  @media screen and (min-width: 100px) and (max-width: 479px) {
-    .sponsor-img {
-      width: 100%; } }
 
 .mobile-only {
   display: none; }
