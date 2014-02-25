@@ -952,6 +952,9 @@ code {
   width: 90%;
   height: 200px;
   background-size: 100% 100%; }
+  @media screen and (min-width: 100px) and (max-width: 479px) {
+    .artist-img {
+      width: 100%; } }
 
 #lineup ul li:first-child {
   font-weight: 800; }
@@ -960,6 +963,9 @@ code {
   display: inline-block;
   width: 30%;
   margin: 2% 5%; }
+  @media screen and (min-width: 100px) and (max-width: 479px) {
+    .sponsor-img {
+      width: 100%; } }
 
 .mobile-only {
   display: none; }
