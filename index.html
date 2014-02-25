@@ -3,24 +3,22 @@ layout: default
 title: TAMU BYX Island Party 2014
 ---
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+<script src="/js/jquery.backstretch.min.js"></script>
 <script>
 $(function() {
 
 $('.header-full-bleed').backstretch(
-  ["/img/islandparty-4581.jpg"
-  ], {duration: 4000, fade: 1500}
+  ['/img/islandparty-4581.jpg'
+  ,'/img/islandparty-4123.jpg'
+  ,'/img/islandparty-4549.jpg'
+  ,'/img/islandparty-4232.jpg'
+  ,'/img/islandparty-4584.jpg'
+  ,'/img/islandparty-4589.jpg'
+  ,'/img/islandparty-4172.jpg'
+  ,'/img/islandparty-4172.jpg'
+  ,'/img/islandparty-4513.jpg'
+  ], {duration: 3500, fade: 1500, lazyload: true}
 );
-
-// Attempt to speed up load times
-var instance = $('.header-full-bleed').data('backstretch');
-instance.images.push('/img/islandparty-4123.jpg');
-instance.images.push('/img/islandparty-4549.jpg');
-instance.images.push('/img/islandparty-4232.jpg');
-//instance.images.push('/img/islandparty-4584.jpg');
-//instance.images.push('/img/islandparty-4589.jpg');
-//instance.images.push('/img/islandparty-4172.jpg');
-//instance.images.push('/img/islandparty-4513.jpg');
 
 $('.site-nav--link').click(function(){
     if ( $(this).attr('href') === "#" ) {
