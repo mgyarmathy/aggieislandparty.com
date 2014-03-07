@@ -524,15 +524,15 @@ date {
 a {
   text-decoration: none; }
 
-.link-hover-blue:hover, .large-list .large-list--link:hover, .site-nav--link:hover, .link-hover-blue:focus, .large-list .large-list--link:focus, .site-nav--link:focus {
+.link-hover-blue:hover, .large-list .large-list--link:hover, a:hover, .site-nav--link:hover, .link-hover-blue:focus, .large-list .large-list--link:focus, a:focus, .site-nav--link:focus {
   color: #0c383f; }
-  .link-hover-blue:hover .meta, .large-list .large-list--link:hover .meta, .site-nav--link:hover .meta, .link-hover-blue:focus .meta, .large-list .large-list--link:focus .meta, .site-nav--link:focus .meta {
+  .link-hover-blue:hover .meta, .large-list .large-list--link:hover .meta, a:hover .meta, .site-nav--link:hover .meta, .link-hover-blue:focus .meta, .large-list .large-list--link:focus .meta, a:focus .meta, .site-nav--link:focus .meta {
     color: #0c383f; }
-.link-hover-blue:active, .large-list .large-list--link:active, .site-nav--link:active {
+.link-hover-blue:active, .large-list .large-list--link:active, a:active, .site-nav--link:active {
   color: #15616d; }
 
-.highlight {
-  color: #0c383f; }
+.highlight, a {
+  color: #15616d; }
 
 .site-nav {
   width: 100%;
