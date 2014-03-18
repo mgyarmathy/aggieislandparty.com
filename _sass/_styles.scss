@@ -93,3 +93,12 @@
     width: 100%;
     height: 100%;
 }
+
+.speaker {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: $type-4 - 12px;
+  @include breakpoint(one-hand){
+      font-size: $type-5 - 6px;
+  }
+}
