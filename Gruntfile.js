@@ -40,6 +40,7 @@ module.exports = function(grunt) {
 			html: {
 				files: [
                'index.html',
+               'bball.html',
                '_posts/*.html',
                '_posts/*.md',
                '_layouts/*.html',
