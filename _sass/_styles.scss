@@ -66,14 +66,31 @@
 
 .sponsor-img {
   display: inline-block;
-  width: 30%;
+  width: 35%;
   margin: 2% 5%;
+}
+
+.special-thanks {
+  li {
+    display: inline;
+    text-transform: uppercase;
+    &:nth-child(odd) {
+      color: $blue-dark;
+    }
+  }
 }
 
 .mobile-only {
   display: none;
   @include breakpoint(one-hand){
       display: block;
+  }
+}
+
+.hide-mobile {
+  display: inherit;
+  @include breakpoint(one-hand){
+      display: none;
   }
 }
 

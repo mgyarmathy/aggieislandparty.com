@@ -413,7 +413,7 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: 24px;
-  font-weight: 900; }
+  xfont-weight: 900; }
   @media screen and (min-width: 100px) and (max-width: 479px) {
     h4, .h4 {
       font-size: 18px; } }
@@ -961,14 +961,26 @@ code {
 
 .sponsor-img {
   display: inline-block;
-  width: 30%;
+  width: 35%;
   margin: 2% 5%; }
+
+.special-thanks li {
+  display: inline;
+  text-transform: uppercase; }
+  .special-thanks li:nth-child(odd) {
+    color: #0c383f; }
 
 .mobile-only {
   display: none; }
   @media screen and (min-width: 100px) and (max-width: 479px) {
     .mobile-only {
       display: block; } }
+
+.hide-mobile {
+  display: inherit; }
+  @media screen and (min-width: 100px) and (max-width: 479px) {
+    .hide-mobile {
+      display: none; } }
 
 /* Youtube Embed */
 .video-container {
