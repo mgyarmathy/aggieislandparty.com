@@ -1017,7 +1017,7 @@ button {
   vertical-align: middle;
   border: 3px solid #15616d;
   padding: 10px; }
-  button:hover {
+  button:hover, button:click {
     color: #0c383f;
     border: 3px solid #0c383f; }
 

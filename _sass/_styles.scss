@@ -130,7 +130,7 @@ button {
   vertical-align: middle;
   border: 3px solid $blue-medium;
   padding: 10px;
-  &:hover {
+  &:hover, &:click {
     color: $blue-dark;
     border: 3px solid $blue-dark;
   }
