@@ -139,9 +139,15 @@ button {
 #toggle-lineup-view {
   margin-left: 5px;
   float: right;
-  @include breakpoint(one-hand){
-      font-size: $type-5;
-      margin-left: 0;
-      float: none;
+  @include breakpoint(one-hand) {
+    font-size: $type-5;
+    margin-left: 0;
+    float: none;
+  }
+}
+
+#lineup li {
+  @include breakpoint(one-hand) {
+    font-size: $type-4 - 2px;
   }
 }
