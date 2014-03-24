@@ -58,7 +58,7 @@
   }
 }
 
-#lineup ul li {
+#lineup-view ul li {
   &:first-child {
     font-weight: 800;
   }
@@ -117,5 +117,31 @@
   font-size: $type-4 - 12px;
   @include breakpoint(one-hand){
       font-size: $type-5 - 6px;
+  }
+}
+
+button {
+  font-size: $type-4;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: $blue-medium;
+  background: transparent;
+  vertical-align: middle;
+  border: 3px solid $blue-medium;
+  padding: 10px;
+  &:hover {
+    color: $blue-dark;
+    border: 3px solid $blue-dark;
+  }
+}
+
+#toggle-lineup-view {
+  margin-left: 5px;
+  float: right;
+  @include breakpoint(one-hand){
+      font-size: $type-5;
+      margin-left: 0;
+      float: none;
   }
 }

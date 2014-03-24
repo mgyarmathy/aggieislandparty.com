@@ -956,7 +956,7 @@ code {
     .artist-img {
       width: 100%; } }
 
-#lineup ul li:first-child {
+#lineup-view ul li:first-child {
   font-weight: 800; }
 
 .sponsor-img {
@@ -1006,6 +1006,29 @@ code {
   @media screen and (min-width: 100px) and (max-width: 479px) {
     .speaker {
       font-size: 12px; } }
+
+button {
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #15616d;
+  background: transparent;
+  vertical-align: middle;
+  border: 3px solid #15616d;
+  padding: 10px; }
+  button:hover {
+    color: #0c383f;
+    border: 3px solid #0c383f; }
+
+#toggle-lineup-view {
+  margin-left: 5px;
+  float: right; }
+  @media screen and (min-width: 100px) and (max-width: 479px) {
+    #toggle-lineup-view {
+      font-size: 18px;
+      margin-left: 0;
+      float: none; } }
 
 .progressjs-inner {
   width: 0; }

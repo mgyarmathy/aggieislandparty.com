@@ -26,6 +26,19 @@ $('.site-nav--link').click(function(){
     return false;
 });
 
+$('#toggle-lineup-view').click(function(){
+  if ( $('#lineup-view').is(':visible') ) {
+    $('#lineup-view').hide();
+    $('#schedule-view').show();
+    $(this).text('view lineup');
+  }
+  else {
+    $('#schedule-view').hide();
+    $('#lineup-view').show();
+    $(this).text('view schedule');
+  }
+});
+
 });
 
 // progress bar for hero unit slideshow
