@@ -1021,11 +1021,11 @@ button {
     color: #0c383f;
     border: 3px solid #0c383f; }
 
-#toggle-lineup-view {
+h2 button {
   margin-left: 5px;
   float: right; }
   @media screen and (min-width: 100px) and (max-width: 479px) {
-    #toggle-lineup-view {
+    h2 button {
       font-size: 18px;
       margin-left: 0;
       float: none; } }
