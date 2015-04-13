@@ -1,16 +1,16 @@
 $(function() {
 
-$('.header-full-bleed').backstretch(
-  ['/img/islandparty-4581.jpg'
-  ,'/img/islandparty-4123.jpg'
-  ,'/img/islandparty-4549.jpg'
-  //,'/img/islandparty-4172.jpg'
-  //,'/img/islandparty-4589.jpg'
-  //,'/img/islandparty-4232.jpg'
-  //,'/img/islandparty-4584.jpg'
-  //,'/img/islandparty-4513.jpg'
-  ], {duration: 5000, fade: 1500, lazyload: true}
-);
+// $('.header-full-bleed').backstretch(
+//   ['/img/islandparty-4581.jpg'
+//   ,'/img/islandparty-4123.jpg'
+//   ,'/img/islandparty-4549.jpg'
+//   //,'/img/islandparty-4172.jpg'
+//   //,'/img/islandparty-4589.jpg'
+//   //,'/img/islandparty-4232.jpg'
+//   //,'/img/islandparty-4584.jpg'
+//   //,'/img/islandparty-4513.jpg'
+//   ], {duration: 5000, fade: 1500, lazyload: true}
+// );
 
 $('.site-nav--link').click(function(){
     if ( $(this).attr('href') === "#" ) {
