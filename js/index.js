@@ -12,10 +12,16 @@ $(function() {
 //   ], {duration: 5000, fade: 1500, lazyload: true}
 // );
 
-  $(window).bind("load", function() {
-     $('div').filter(function() {
+$(window).bind("load", function() {
+  $('div').filter(function() {
       return $(this).css('z-index') == '2147483646';
-  }).remove();
+  })
+  .detach()
+  .appendTo('#merch')
+  .addClass('hide-mobile')
+  .css('position', 'inherit')
+  .css('float', 'right')
+  .css('margin-top', '-33px');
 });
 
 
