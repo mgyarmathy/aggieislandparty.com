@@ -12,6 +12,14 @@ $(function() {
 //   ], {duration: 5000, fade: 1500, lazyload: true}
 // );
 
+  $(window).bind("load", function() {
+     $('div').filter(function() {
+      return $(this).css('z-index') == '2147483646';
+  }).remove();
+});
+
+
+
 $('.site-nav--link').click(function(){
     if ( $(this).attr('href') === "#" ) {
       $('html, body').animate({
