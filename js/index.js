@@ -1,15 +1,16 @@
 $(function() {
 
 // $('.header-full-bleed').backstretch(
-//   ['/img/islandparty-4581.jpg'
-//   ,'/img/islandparty-4123.jpg'
-//   ,'/img/islandparty-4549.jpg'
+//   ['/img/islandparty-4581-min-darker.jpg'
+//   ,'/img/ip2015-hero-min.jpg'
+//   ,'/img/islandparty-4172-min.jpg'
+//   //,'/img/islandparty-4570-min.jpg'
 //   //,'/img/islandparty-4172.jpg'
 //   //,'/img/islandparty-4589.jpg'
 //   //,'/img/islandparty-4232.jpg'
 //   //,'/img/islandparty-4584.jpg'
 //   //,'/img/islandparty-4513.jpg'
-//   ], {duration: 5000, fade: 1500, lazyload: true}
+//   ], {duration: 3000, fade: 1500, lazyload: true}
 // );
 
 $(window).bind("load", function() {
