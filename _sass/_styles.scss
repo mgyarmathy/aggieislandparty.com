@@ -11,8 +11,8 @@
   text-align: center;
 
   .header-logo {
-    margin: 0;
-    width: 45%;
+    margin: 0.5em 0;
+    width: 60%;
     xheight: 515px;
     xwidth: 386px;
     @include breakpoint(one-hand){

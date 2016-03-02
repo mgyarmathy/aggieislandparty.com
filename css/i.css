@@ -918,8 +918,8 @@ code {
   margin-top: 50px;
   text-align: center; }
   .header-full-bleed .header-logo {
-    margin: 0;
-    width: 45%;
+    margin: 0.5em 0;
+    width: 60%;
     xheight: 515px;
     xwidth: 386px;
     display: inline; }
