@@ -959,7 +959,8 @@ code {
       width: 100%; } }
 
 #lineup-view ul li:first-child {
-  font-weight: 800; }
+  font-weight: 800;
+  font-size: 36px; }
 
 .sponsor-img {
   display: inline-block;
