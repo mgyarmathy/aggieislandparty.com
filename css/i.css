@@ -398,7 +398,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: 48px;
-  color: #15616d; }
+  color: #21374F; }
   @media screen and (min-width: 100px) and (max-width: 479px) {
     h2, .h2 {
       font-size: 32px; } }
@@ -529,10 +529,10 @@ a {
   .link-hover-blue:hover .meta, .large-list .large-list--link:hover .meta, a:hover .meta, .site-nav--link:hover .meta, .link-hover-blue:focus .meta, .large-list .large-list--link:focus .meta, a:focus .meta, .site-nav--link:focus .meta {
     color: #0c383f; }
 .link-hover-blue:active, .large-list .large-list--link:active, a:active, .site-nav--link:active {
-  color: #15616d; }
+  color: #21374F; }
 
 .highlight, a {
-  color: #15616d; }
+  color: #21374F; }
 
 .site-nav {
   width: 100%;
@@ -1015,10 +1015,10 @@ button {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #15616d;
+  color: #21374F;
   background: transparent;
   vertical-align: middle;
-  border: 3px solid #15616d;
+  border: 3px solid #21374F;
   padding: 10px; }
   button:hover, button:click {
     color: #0c383f;
@@ -1053,7 +1053,7 @@ h2 button {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  background-color: #15616d; }
+  background-color: #21374F; }
 
 .progressjs-theme-blue.progressjs-end {
   -webkit-transition: opacity 0.2s ease-out;
