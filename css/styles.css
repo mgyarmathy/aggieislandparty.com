@@ -698,7 +698,7 @@ header {
   height: 200px;
   width: 100%;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: bottom center;
   background-size: cover;
 }
 
@@ -1056,9 +1056,20 @@ header {
 }
 
 #merch .product_description_content .button2 {
-  margin-top: 8rem;
+  margin-top: 6rem;
   margin-bottom: -8rem;
   max-width: 200px;
+}
+
+#merch .product_description_content .product {
+  background-color: #B4B4B4;
+  color: #ffffff;
+}
+
+#merch .product_description_content .product:hover {
+  background-color: #B4B4B4;
+  color: #ffffff;
+  box-shadow: none;
 }
 
 /* Media Queries
@@ -1270,6 +1281,7 @@ footer .top:hover {
   background-color: #cdcdcd;
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 50px;
   margin-top: -7rem;
   border: 2px solid #305e87;
@@ -1278,6 +1290,26 @@ footer .top:hover {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+}
+
+#team .team_member .fm {
+  background-image: url(/images/fm.jpg);
+}
+
+#team .team_member .ws {
+  background-image: url(/images/ws.jpg);
+}
+
+#team .team_member .ji {
+  background-image: url(/images/ji.jpg);
+}
+
+#team .team_member .bh {
+  background-image: url(/images/bh.jpg);
+}
+
+#team .team_member .cb {
+  background-image: url(/images/cb.jpg);
 }
 
 #team .team_member h3 {
