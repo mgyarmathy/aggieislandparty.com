@@ -1312,6 +1312,14 @@ footer .top:hover {
   background-image: url(/images/cb.jpg);
 }
 
+#team .team_member .mh {
+  background-image: url(/images/mh.jpg);
+}
+
+#team .team_member .tc {
+  background-image: url(/images/tc.jpg);
+}
+
 #team .team_member h3 {
   margin-top: 3rem;
   font-size: 24px;
