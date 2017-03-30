@@ -414,10 +414,10 @@ header {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  padding-top: 4rem;
   padding-bottom: 4rem;
   right: 0;
   left: 0;
+  min-height: 95vh;
 }
 
 #hero .hero_content {
@@ -446,9 +446,18 @@ header {
 }
 
 #hero .hero_content h3 {
-  padding-top: 11rem;
+  padding-top: 5rem;
   font-size: 24px;
   letter-spacing: 2px;
+}
+
+#hero .hero_content h4 {
+  padding-top: 2rem;
+  margin-bottom: -1rem;
+}
+
+#hero .hero_content img {
+  width: 400px;
 }
 
 #hero .hero_content .info1 {
@@ -484,6 +493,9 @@ header {
     width: 325px;
     margin-left: auto;
     margin-right: auto;
+  }
+  #hero .hero_content img {
+    width: 300px;
   }
 }
 
@@ -565,6 +577,10 @@ header {
   -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
   padding: 3rem 2rem 4rem 2rem;
+}
+
+#about .give_content a {
+  text-decoration: none;
 }
 
 #about .give_content h2 {
@@ -991,6 +1007,7 @@ header {
   background-color: #fafafa;
   padding-top: 18rem;
   padding-bottom: 15rem;
+  text-decoration: none;
 }
 
 #merch .product_description1 {
@@ -1028,6 +1045,11 @@ header {
 #merch .product_description_content {
   margin-top: 3rem;
   display: block;
+  text-decoration: none;
+}
+
+#merch .product_description_content a {
+  text-decoration: none;
 }
 
 #merch .product_description_content h2 {
@@ -1059,6 +1081,7 @@ header {
   margin-top: 6rem;
   margin-bottom: -8rem;
   max-width: 200px;
+  text-decoration: none;
 }
 
 #merch .product_description_content .product {
@@ -1130,6 +1153,17 @@ header {
   padding-bottom: 10rem;
 }
 
+#sponsors .sponsors_content .sponsorstext {
+  text-align: center;
+}
+
+#sponsors .sponsors_content .sponsorstext h2 {
+  margin-top: 1rem;
+  font-size: 24px;
+  font-weight: 600;
+  color: #200e11;
+}
+
 #sponsors .sponsors_content img {
   display: block;
   margin-top: 4rem;
@@ -1145,6 +1179,9 @@ header {
   #sponsors {
     padding-top: 5rem;
     padding-bottom: 6rem;
+  }
+  #sponsors .sponsors_content .sponsorstext h2 {
+    font-size: 18px;
   }
   #sponsors .sponsors_content img {
     height: 100px;
